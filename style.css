@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+    background-color: grey;
+  }
+  
+  h1 {
+    color: red;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    border: 5px white;  
+  }
+  
+  img {
+    border-top-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    
+  }
+
+  body {
+    background: linear-gradient(to top left, #003300, black 60%);
+    color: white;
+  }
+  
+  p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  ul {
+    color: rgb(71, 255, 240);
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  table th, td {
+      border-top: 2px solid #999999;
+      border-bottom: 2px solid #999999;
+      border-left: 1px solid #999999;
+      border-right: 1px solid #999999;
+  }
+
+  .randomformat {
+    background-color: blue;
+    opacity: 0.5;
+    box-shadow: black;
+    border-style: ridge;
+  }
