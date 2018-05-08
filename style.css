@@ -10,6 +10,7 @@ body
 	font: 1em/1.2 "Helvetica";
 }
 
+
 h1,h2,h3,h4,h5,h6
 {
 	margin: 10px;
@@ -69,12 +70,16 @@ Layout styles
   align-content: center;
 }
 
-.header
+
+
+.heading
 {
 	color: #fff;
 	background: linear-gradient(to top right, rgb(115,0,10), black );
 	padding: 10px;
 	font-variant: small-caps;
+	line-height: 17px;
+	box-sizing: inherit;
 }
 
 .content
