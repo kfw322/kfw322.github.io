@@ -11,12 +11,12 @@ $(document).ready(function() {
   } );
 } );
 $searchBtn.addEventListener("click", clicked);
-var f = partDataSet;
+var f = dataSet;
 renderTable();
 
 function clicked() {
 
-  f = partDataSet;
+  f = dataSet;
   renderTable();
   if ($datetimeinput.value.trim()){ //DATETIME
     f = f.filter(function(entry) {
