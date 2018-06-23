@@ -52,8 +52,8 @@ Base.prepare()
 session=Session(engine)
 app = Flask(__name__)
 
-@app.route("/home")
-def home():
+@app.route("/")
+def index():
     return "hi"
 
 @app.route("/visualization_1")
@@ -223,4 +223,4 @@ def inc(state):
 
 
 if __name__ == "__main__":
-    app.run("http://localhost:5000",debug=True)
+    app.run(debug=True)
