@@ -54,7 +54,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return redirect("http://localhost:5000/")
+    return render_template("index.html")
 
 @app.route("/visualization_1")
 def viz_1():
@@ -70,7 +70,7 @@ def viz_3():
 
 @app.route("/index.html")
 def dashboard_home():
-    return render_template("index.html")
+    return redirect("http://localhost:5000/")
 
 @app.route("/group.html")
 def group():
