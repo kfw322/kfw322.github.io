@@ -7,14 +7,14 @@ var data = [{
    type: 'choropleth',
    locationmode: 'USA-states',
    locations: unpack(rows, 'Code'),
-   z: unpack(rows, 'PCEPERCAP'),
+   z: unpack(rows, 'SAVPCT'),
    text: unpack(rows, 'GeoName'),
-   zmin: 30000,
-   zmax: 55000,
-   colorscale: 'Hot',
+   zmin: -15,
+   zmax: 15,
+   colorscale: 'Viridis',
    hoverinfo: "location+z+text",
  colorbar: {
-   title: 'USD',
+   title: 'Savings %',
    thickness: 20
  },
  marker: {
@@ -26,7 +26,7 @@ var data = [{
 }];
 console.log(data.locations);
 var layout = {
-title: '2016 Personal Consumption Expenditure in the United States (In Millions)',
+title: 'Calculated Savings Percentage',
 geo:{
  scope: 'usa',
  showlakes: true,
@@ -35,12 +35,12 @@ geo:{
 };
 
 
-Plotly.plot(myDiv, data, layout, {showLink: false});
-myPlot.on("plotly_click", d => {
- var pt = (d.points || [])[0]
- window.open(
-   'pcegraph/' + pt.text,
-   '_blank' // <- This is what makes it open in a new window.
- );})
+ Plotly.plot(myDiv, data, layout, {showLink: false});
+// myPlot.on("plotly_click", d => {
+//  var pt = (d.points || [])[0]
+//  window.open(
+//    'pcegraph/' + pt.text,
+//    '_blank' // <- This is what makes it open in a new window.
+//  );})
 
-})
+ })
