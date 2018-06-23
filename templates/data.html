@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="static/img/db_icon.png">
+  <link rel="icon" type="image/png" href="static/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Material Dashboard Edit by Beth Yoder
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!-- Plotly and D3 -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <!-- Fonts and icons -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="static/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  
+</head>
+
+<!-- ################################## SIDEBAR ################################################################# -->
+<body>
+    <body class="">
+        <div class="wrapper ">
+          <div class="sidebar" data-color="#CCCCFF" data-background-color="white" data-image="static/img/sidebar-1.jpg">
+            <div class="logo">
+              <li class="simple-text logo-normal">
+                PROJECT 2
+              </a>
+            </div>
+            <div class="sidebar-wrapper">
+              <ul class="nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">
+                    <i class="material-icons">dashboard</i>
+                    <p>Dashboard Home</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="group.html">
+                    <i class="material-icons">person</i>
+                    <p>Group Members</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="abstract.html">
+                      <i class="material-icons">chrome_reader_mode</i>
+                      <p>Abstract</p>
+                    </a>
+                  </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="data.html">
+                      <i class="material-icons">content_paste</i>
+                      <p>Data Sources</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="glossary.html">
+                    <i class="material-icons">library_books</i>
+                    <p>Glossary</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="references.html">
+                    <i class="material-icons">location_ons</i>
+                    <p>References</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-panel">
+
+<!-- ################################## TOP NAVBAR ################################################################# --> 
+<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <a class="navbar-brand" href="index.html">A Dashboard Visualizing the US Personal Savings Rate</a>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <a href="sms://+18122599334">Contact Us</a>
+              <i class="material-icons">message</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+      </div>
+            <div class="col-md-12">
+              <div class="card card-plain">
+                <div class="card-header card-header-success">
+                  <h4 class="card-title mt-0">Personal Consumption Expenditures</h4>
+                  <p class="card-category">First 10 of 1200 rows</p>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead class="">
+                          <thead>
+                              <tr style="text-align: right;">
+                                <th></th>
+                                <th>GeoFIPS</th>
+                                <th>GeoName</th>
+                                <th>Region</th>
+                                <th>ComponentId</th>
+                                <th>ComponentName</th>
+                                <th>Line</th>
+                                <th>IndustryClassification</th>
+                                <th>Description</th>
+                                <th>1997</th>
+                                <th>1998</th>
+                                <th>1999</th>
+                                <th>2000</th>
+                                <th>2001</th>
+                                <th>2002</th>
+                                <th>2003</th>
+                                <th>2004</th>
+                                <th>2005</th>
+                                <th>2006</th>
+                                <th>2007</th>
+                                <th>2008</th>
+                                <th>2009</th>
+                                <th>2010</th>
+                                <th>2011</th>
+                                <th>2012</th>
+                                <th>2013</th>
+                                <th>2014</th>
+                                <th>2015</th>
+                                <th>2016</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>24</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>1</td>
+                                <td>...</td>
+                                <td>Personal consumption expenditures</td>
+                                <td>75315</td>
+                                <td>78854</td>
+                                <td>83199</td>
+                                <td>87604</td>
+                                <td>90831</td>
+                                <td>94911</td>
+                                <td>99273</td>
+                                <td>105474</td>
+                                <td>113508</td>
+                                <td>118927</td>
+                                <td>123834</td>
+                                <td>126943</td>
+                                <td>125119</td>
+                                <td>129660</td>
+                                <td>134700</td>
+                                <td>137570</td>
+                                <td>140835</td>
+                                <td>144674</td>
+                                <td>148418</td>
+                                <td>152397</td>
+                              </tr>
+                              <tr>
+                                <th>25</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Goods</td>
+                                <td>30049</td>
+                                <td>31111</td>
+                                <td>33395</td>
+                                <td>35008</td>
+                                <td>36119</td>
+                                <td>37812</td>
+                                <td>39576</td>
+                                <td>42190</td>
+                                <td>45230</td>
+                                <td>47249</td>
+                                <td>49247</td>
+                                <td>49425</td>
+                                <td>47108</td>
+                                <td>49285</td>
+                                <td>52119</td>
+                                <td>53643</td>
+                                <td>54782</td>
+                                <td>55760</td>
+                                <td>56034</td>
+                                <td>56573</td>
+                              </tr>
+                              <tr>
+                                <th>26</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>3</td>
+                                <td>...</td>
+                                <td>Durable goods</td>
+                                <td>10211</td>
+                                <td>10893</td>
+                                <td>11757</td>
+                                <td>12048</td>
+                                <td>12313</td>
+                                <td>13163</td>
+                                <td>13599</td>
+                                <td>14482</td>
+                                <td>15242</td>
+                                <td>15745</td>
+                                <td>16613</td>
+                                <td>15207</td>
+                                <td>14226</td>
+                                <td>14821</td>
+                                <td>15439</td>
+                                <td>16281</td>
+                                <td>16839</td>
+                                <td>17364</td>
+                                <td>18176</td>
+                                <td>18683</td>
+                              </tr>
+                              <tr>
+                                <th>27</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>4</td>
+                                <td>...</td>
+                                <td>Motor vehicles and parts</td>
+                                <td>4891</td>
+                                <td>5285</td>
+                                <td>5773</td>
+                                <td>5814</td>
+                                <td>6049</td>
+                                <td>6431</td>
+                                <td>6451</td>
+                                <td>6591</td>
+                                <td>6727</td>
+                                <td>6672</td>
+                                <td>6740</td>
+                                <td>5616</td>
+                                <td>5128</td>
+                                <td>5636</td>
+                                <td>5994</td>
+                                <td>6439</td>
+                                <td>6675</td>
+                                <td>6949</td>
+                                <td>7339</td>
+                                <td>7489</td>
+                              </tr>
+                              <tr>
+                                <th>28</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>5</td>
+                                <td>...</td>
+                                <td>Furnishings and durable household equipment</td>
+                                <td>2221</td>
+                                <td>2335</td>
+                                <td>2479</td>
+                                <td>2588</td>
+                                <td>2601</td>
+                                <td>2777</td>
+                                <td>2892</td>
+                                <td>3138</td>
+                                <td>3424</td>
+                                <td>3622</td>
+                                <td>3721</td>
+                                <td>3494</td>
+                                <td>3219</td>
+                                <td>3243</td>
+                                <td>3318</td>
+                                <td>3429</td>
+                                <td>3484</td>
+                                <td>3595</td>
+                                <td>3799</td>
+                                <td>3982</td>
+                              </tr>
+                              <tr>
+                                <th>29</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>6</td>
+                                <td>...</td>
+                                <td>Recreational goods and vehicles</td>
+                                <td>1908</td>
+                                <td>2007</td>
+                                <td>2139</td>
+                                <td>2216</td>
+                                <td>2274</td>
+                                <td>2458</td>
+                                <td>2702</td>
+                                <td>3040</td>
+                                <td>3266</td>
+                                <td>3446</td>
+                                <td>3931</td>
+                                <td>3869</td>
+                                <td>3691</td>
+                                <td>3694</td>
+                                <td>3732</td>
+                                <td>3948</td>
+                                <td>4078</td>
+                                <td>4126</td>
+                                <td>4274</td>
+                                <td>4400</td>
+                              </tr>
+                              <tr>
+                                <th>30</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>7</td>
+                                <td>...</td>
+                                <td>Other durable goods</td>
+                                <td>1190</td>
+                                <td>1266</td>
+                                <td>1367</td>
+                                <td>1431</td>
+                                <td>1389</td>
+                                <td>1497</td>
+                                <td>1554</td>
+                                <td>1714</td>
+                                <td>1825</td>
+                                <td>2005</td>
+                                <td>2222</td>
+                                <td>2228</td>
+                                <td>2188</td>
+                                <td>2247</td>
+                                <td>2395</td>
+                                <td>2466</td>
+                                <td>2602</td>
+                                <td>2694</td>
+                                <td>2764</td>
+                                <td>2812</td>
+                              </tr>
+                              <tr>
+                                <th>31</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>8</td>
+                                <td>...</td>
+                                <td>Nondurable goods</td>
+                                <td>19839</td>
+                                <td>20218</td>
+                                <td>21638</td>
+                                <td>22959</td>
+                                <td>23805</td>
+                                <td>24649</td>
+                                <td>25977</td>
+                                <td>27708</td>
+                                <td>29988</td>
+                                <td>31504</td>
+                                <td>32634</td>
+                                <td>34218</td>
+                                <td>32882</td>
+                                <td>34464</td>
+                                <td>36680</td>
+                                <td>37362</td>
+                                <td>37943</td>
+                                <td>38396</td>
+                                <td>37858</td>
+                                <td>37890</td>
+                              </tr>
+                              <tr>
+                                <th>32</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>9</td>
+                                <td>...</td>
+                                <td>Food and beverages purchased for off-premis...</td>
+                                <td>7743</td>
+                                <td>7854</td>
+                                <td>8266</td>
+                                <td>8320</td>
+                                <td>8781</td>
+                                <td>9037</td>
+                                <td>9328</td>
+                                <td>9671</td>
+                                <td>10254</td>
+                                <td>10259</td>
+                                <td>10564</td>
+                                <td>11066</td>
+                                <td>11103</td>
+                                <td>11277</td>
+                                <td>11795</td>
+                                <td>11858</td>
+                                <td>11950</td>
+                                <td>11979</td>
+                                <td>12079</td>
+                                <td>12306</td>
+                              </tr>
+                              <tr>
+                                <th>33</th>
+                                <td>1000</td>
+                                <td>Alabama</td>
+                                <td>5.0</td>
+                                <td>1</td>
+                                <td>Total personal consumption expenditures (PCE) ...</td>
+                                <td>10</td>
+                                <td>...</td>
+                                <td>Clothing and footwear</td>
+                                <td>3550</td>
+                                <td>3693</td>
+                                <td>3745</td>
+                                <td>3803</td>
+                                <td>3794</td>
+                                <td>3893</td>
+                                <td>3820</td>
+                                <td>3994</td>
+                                <td>4210</td>
+                                <td>4302</td>
+                                <td>4332</td>
+                                <td>4314</td>
+                                <td>4201</td>
+                                <td>4369</td>
+                                <td>4540</td>
+                                <td>4579</td>
+                                <td>4671</td>
+                                <td>4792</td>
+                                <td>4942</td>
+                                <td>5045</td>
+                              </tr>
+                            </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ################################## FOOTER ################################################################# -->
+<footer class="footer">
+    <div class="container-fluid">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="https://github.com/kfw322/kfw322.github.io">
+              Visit Our Group Repository on Github
+            </a>
+          </li>
+          <li>
+            <a href="https://bootcamp.uncc.edu/data/">
+              UNCC Data Analytics Bootcamp
+            </a>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script> made with <i class="material-icons">favorite</i> 
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+
+<!--   Core JS Files   -->
+<script src="../static/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="../static/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../static/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="../static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="../static/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../static/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
+
+</body>
+
+</html>
