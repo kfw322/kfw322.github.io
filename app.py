@@ -52,9 +52,9 @@ Base.prepare()
 session=Session(engine)
 app = Flask(__name__)
 
-@app.route("/stuff/")
+@app.route("/home.html")
 def home():
-    return render_template("index.html")
+    return "hi"
 
 @app.route("/visualization_1")
 def viz_1():
