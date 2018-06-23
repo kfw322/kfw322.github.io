@@ -54,7 +54,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return redirect("http://localhost:5000/")
 
 @app.route("/visualization_1")
 def viz_1():
