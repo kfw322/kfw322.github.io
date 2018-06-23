@@ -52,7 +52,7 @@ Base.prepare()
 session=Session(engine)
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/stuff/")
 def home():
     return render_template("index.html")
 
@@ -70,7 +70,7 @@ def viz_3():
 
 @app.route("/index.html")
 def dashboard_home():
-    return redirect("http://localhost:5000/")
+    return render_template("index.html")
 
 @app.route("/group.html")
 def group():
